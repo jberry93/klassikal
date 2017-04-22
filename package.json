@@ -1,0 +1,28 @@
+{
+  "name": "klassikal",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "https://github.com/jberry93/klassikal.git",
+  "author": "jberry93 <jeffreyberry93@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "./node_modules/.bin/webpack --config webpack.config.js --progress --profile",
+    "prod": "npm run dev -- -p",
+    "server": "./node_modules/.bin/webpack-dev-server"
+  },
+  "dependencies": {
+    "vue": "^2.2.6",
+    "vuetify": "^0.11.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.4.0",
+    "css-loader": "^0.28.0",
+    "vue-loader": "^11.3.4",
+    "vue-template-compiler": "^2.2.6",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.3"
+  }
+}
