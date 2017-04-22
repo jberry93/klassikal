@@ -1,6 +1,4 @@
-"use strict";
-
-var rules = [
+export default [
   {
     test: /\.js$/,
     exclude: /node_modules/,
@@ -17,6 +15,4 @@ var rules = [
     test: /.styl$/,
     loader: ['style-loader', 'css-loader', 'stylus-loader']
   }
-];
-
-module.exports = rules;
+]
