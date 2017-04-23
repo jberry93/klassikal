@@ -1,11 +1,9 @@
-"use strict";
+import path from 'path'
+import webpack from 'webpack'
+import rules from './webpack.rules.babel'
+const prod = (process.env.NODE_ENV === 'product')
 
-var path = require('path');
-var webpack = require('webpack');
-var rules = require('./webpack.rules');
-var prod = (process.env.NODE_ENV === 'production');
-
-var config = {
+const config = {
   cache: true,
   entry: {
     app: [
@@ -35,4 +33,4 @@ if (prod) {
   );
 }
 
-module.exports = config;
+export default config

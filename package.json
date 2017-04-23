@@ -6,7 +6,7 @@
   "author": "jberry93 <jeffreyberry93@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "./node_modules/.bin/webpack --config webpack.config.js --progress --profile",
+    "dev": "./node_modules/.bin/webpack --config webpack.config.babel.js --progress --profile",
     "prod": "npm run dev -- -p",
     "server": "./node_modules/.bin/webpack-dev-server"
   },
